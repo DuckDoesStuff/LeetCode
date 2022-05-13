@@ -19,7 +19,7 @@ ListNode* swapPairs(ListNode* head) {
         ListNode* second = curr->next;
         ListNode* nxt = curr->next->next;//after swapping we will lose track of where to go next
 
-        curr->next = second->next;
+        curr->next = nxt;
         second->next = curr;
 
         prev->next = second;
