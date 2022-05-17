@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -17,10 +18,17 @@ bool isAnagram(string s, string t) {
     return mpt == mps;
 }
 
+bool isAnagram2(string s, string t) {
+    sort(s.begin(), s.end());
+    sort(t.begin(), t.end());
+
+    return s == t;
+}
+
 int main() {
-    string str1 = "anagramc";
+    string str1 = "anagram";
     string str2 = "nagraam";
-    cout << isAnagram(str1, str2); 
+    cout << isAnagram2(str1, str2); 
     
     return 0;
 }
