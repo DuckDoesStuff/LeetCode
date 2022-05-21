@@ -20,3 +20,29 @@ Basic stuff/generateMatrix.exe
 Basic stuff/reverseLinkedList.exe
 Basic stuff/reorderList.exe
 Basic stuff/findDuplicate.exe
+C++/climbStairs.exe
+C++/findDuplicate.exe
+C++/generateMatrix.exe
+C++/groupAnagrams.exe
+C++/lengthOfLastWord.exe
+C++/lengthOfLongestSubstring.exe
+C++/maxProfit.exe
+C++/maxSubarray.exe
+C++/mergeTwoLists.exe
+C++/plusOne.exe
+C++/removeNthFromEnd.exe
+C++/reorderList.exe
+C++/reverseLinkedList.exe
+C++/searchRange.exe
+C++/swapPairs.exe
+C++/threeSumClosest.exe
+C++/twoSum_hasmap.exe
+C++/twoSumTwo.exe
+C++/validAnagram.exe
+C++/validPalindrome.exe
+C++/validParentheses.exe
+C++/threeSum.exe
+C++/containsDupe.exe
+C++/addTwoNumbers.exe
+C++/linkedListCycle.exe
+C++/longestCommonPrefix.exe

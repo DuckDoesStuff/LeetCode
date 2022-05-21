@@ -14,23 +14,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode* result = new ListNode(-1);
     ListNode* temp = result;
 
-    while (list1 || list2) {
-        if(list1 == nullptr) {
-            while(list2 != nullptr) {
-                temp->next = list2;
-                list2 = list2->next;
-                temp = temp->next;
-            }
-            break;
-        }
-        if (list2 == nullptr) {
-            while(list1 != nullptr) {
-                temp->next = list1;
-                list1 = list1->next;
-                temp = temp->next;
-            }
-            break;
-        }
+    while (list1 && list2) {
         if(list1->val <= list2->val) {
             while(list1 != nullptr && list1->val <= list2->val) {
                 temp->next = list1;
@@ -45,6 +29,10 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
             }
         }
     }
+    if(list1 == nullptr)
+        temp->next = list2;
+    if (list2 == nullptr)
+        temp->next = list1;
     
     return result->next;
 }
