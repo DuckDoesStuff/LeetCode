@@ -1,4 +1,5 @@
-def longestPalindrome(self, s: str) -> str:
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
         res = ""
         
         for i in range(0, len(s)):
