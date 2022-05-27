@@ -24,7 +24,16 @@ vector<vector<int>> merge1(vector<vector<int>>& intervals) {
 }
 
 vector<vector<int>> merge2(vector<vector<int>> intervals) {
-    
+    sort(intervals.begin(), intervals.end());
+    vector<vector<int>> res;
+    res.push_back(intervals[0]);
+    for(auto it:intervals) {
+        //if start <= endres -> endres = max (endres, end);
+        if(res.back()[1] >= it[0]) 
+            res.back()[1] = max(res.back()[1], it[1]);
+        else res.push_back(it);
+    }
+    return res;
 }
 
 int main() {
